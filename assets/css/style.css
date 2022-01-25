@@ -165,6 +165,7 @@ header {
         width: 75px;
         height: 40px;
         margin: 5px;
+        font-size: 125%;
     }
 
     .weapon {
