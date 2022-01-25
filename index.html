@@ -11,23 +11,51 @@
     <header>
         <h1>Rock Paper Scissors Lizard Spock</h1>
     </header>
+
+    <!-- game play area -->
     <div class="game-area">
 
+        <!-- choose difficulty -->
         <div class="difficulty-area">
             <h2>Choose Difficulty</h2>
-            <button onclick = "selectDifficulty('easy')" class = "btn btn-easy" aria-label = "Easy Difficulty"></button>
-            <button onclick = "selectDifficulty('normal')" class = "btn btn-normal" aria-label = "Normal Difficulty"></button>
-            <button onclick = "selectDifficulty('hard')" class = "btn btn-hard" aria-label = "Hard Difficulty"></button>
+            <button onclick = "selectDifficulty('easy')" class = "btn btn-easy" aria-label = "Easy Difficulty">
+                <p id="easy">Easy</p>
+            </button>
+            <button onclick = "selectDifficulty('normal')" class = "btn btn-normal" aria-label = "Normal Difficulty">
+                <p id="normal">Normal</p>
+            </button>
+            <button onclick = "selectDifficulty('hard')" class = "btn btn-hard" aria-label = "Hard Difficulty">
+                <p id="hard">Hard</p>
+            </button>
         </div>
+
+        <!-- moves remaining until game over -->
         <div class="moves-remaining">
-            <span id="moves-counter"></span>
+            <p>Moves remaining: 
+                <span id="moves-counter">0</span>
+            </p>
+        </div>
+
+        <!-- player weapon selection area -->
+        <div class="subheading">
+            <h2 id="message">Select Your Weapon</h2>
         </div>
         <div class="player-controls">
-            <button onclick = "checkResult('rock')" class = "weapon" aria-label = "rock"></button>
-            <button onclick = "checkResult('paper')" class = "weapon" aria-label = "paper"></button>
-            <button onclick = "checkResult('scissors')" class = "weapon" aria-label = "scissors"></button>
-            <button onclick = "checkResult('lizard')" class = "weapon" aria-label = "lizard"></button>
-            <button onclick = "checkResult('spock')" class = "weapon" aria-label = "spock"></button>
+            <button onclick = "checkResult('rock')" class = "weapon" aria-label = "rock">
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button onclick = "checkResult('paper')" class = "weapon" aria-label = "paper">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button onclick = "checkResult('scissors')" class = "weapon" aria-label = "scissors">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+            <button onclick = "checkResult('lizard')" class = "weapon" aria-label = "lizard">
+                <i class="far fa-hand-lizard"></i>
+            </button>
+            <button onclick = "checkResult('spock')" class = "weapon" aria-label = "spock">
+                <i class="far fa-hand-spock"></i>
+            </button>
         </div>
         <div class="score-board"></div>
     </div>
@@ -35,6 +63,9 @@
         <div class="rules-area"></div>
     </footer>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9b337904bc.js" crossorigin="anonymous"></script>
+    <!-- Linking to Javascript File -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
