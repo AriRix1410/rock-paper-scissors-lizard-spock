@@ -68,6 +68,8 @@ function selectDifficulty(difficultyRating) {
 function checkResult(selected){
     let weaponSelect = ["rock", "paper", "scissors", "lizard", "spock"];
     let num = Math.floor(Math.random()*5);
+    let movesCounter = maxMoves-moves;
+    moves++;
 
     document.getElementById("moves-counter").innerText = movesCounter;
 
@@ -82,6 +84,14 @@ function checkResult(selected){
             break;
         default:
             break;
+    }
+
+    if (movesCounter == maxMoves) {
+        document.getElementById("computer-selected").innerHTML = `Computer is thinking...`;
+        document.getElementById("player-selected").innerHTML = `Player... make your move`;
+    } else {
+        document.getElementById("computer-selected").innerHTML = `Computer picked ${weaponSelect[num]}`;
+        document.getElementById("player-selected").innerHTML = `You picked ${selected}`;
     }
 }
 
