@@ -99,14 +99,24 @@ function checkResult(selected){
 // when counter gets to zero, a winner is declared
     if (movesCounter == 0) {
         if (playerScore > computerScore) {
-            result.innerHTML = "GAME OVER. YOU WIN!";
+            result.innerHTML = "YOU WIN!";
         } else if (playerScore < computerScore) {
-            result.innerHTML = "GAME OVER. YOU LOSE";
-        } else result.innerHTML = "GAME OVER. IT'S A DRAW";
+            result.innerHTML = "YOU LOSE";
+        } else result.innerHTML = "IT'S A DRAW";
+    }
+
+    if (movesCounter ==0) {
+        document.getElementById('message').innerHTML = `GAME OVER!`;
+        document.getElementById('game-zone').style.visibility='hidden';
+        document.getElementById('game-zone').style.display = "none";
     }
 
     document.getElementById("computer-score").innerHTML = computerScore;
     document.getElementById("player-score").innerHTML = playerScore;
+}
+
+function playAgain() {
+    
 }
 
 selectDifficulty();
