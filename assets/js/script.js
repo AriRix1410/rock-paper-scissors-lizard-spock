@@ -47,8 +47,9 @@ let selectedWeapon = {
     },
 }
 
-// function to change moves allowed based on game difficulty on mouse click of difficulty buttons
-// if unclick then default is normal mode
+// function to change moves allowed based on game difficulty
+// on mouse click of difficulty buttons
+// if unclicked then default is normal mode
 function selectDifficulty(difficultyRating) {
     let easyMoves = 7;
     let normalMoves = 5;
@@ -63,8 +64,9 @@ function selectDifficulty(difficultyRating) {
     document.getElementById("moves-counter").innerText = maxMoves;
 }
 
-// moves counter begins on mouse click of weapons button
-// check results of player selection vs computer generated
+// on mouse click of weapon buttons
+// begins moves counter and
+// checks result of player selection vs computer generated
 function checkResult(selected){
     let weaponSelect = ["rock", "paper", "scissors", "lizard", "spock"];
     let num = Math.floor(Math.random()*5);
@@ -93,11 +95,19 @@ function checkResult(selected){
         document.getElementById("computer-selected").innerHTML = `Computer picked ${weaponSelect[num]}`;
         document.getElementById("player-selected").innerHTML = `You picked ${selected}`;
     }
-}
 
-// when counter gets to zero then winner is declared
-// game over and reload
-function gameOver();
+// when counter gets to zero, a winner is declared
+    if (movesCounter == 0) {
+        if (playerScore > computerScore) {
+            result.innerHTML = "GAME OVER. YOU WIN!";
+        } else if (playerScore < computerScore) {
+            result.innerHTML = "GAME OVER. YOU LOSE";
+        } else result.innerHTML = "GAME OVER. IT'S A DRAW";
+    }
+
+    document.getElementById("computer-score").innerHTML = computerScore;
+    document.getElementById("player-score").innerHTML = playerScore;
+}
 
 selectDifficulty();
 checkResult();
