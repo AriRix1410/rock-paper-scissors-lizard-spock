@@ -147,3 +147,41 @@ header {
     color: yellow;
     font-size: 150%;
 }
+
+/* for smaller screen sizes */
+
+@media screen and (max-width: 650px) {
+
+    .heading {
+        font-size: 200%;
+        padding: 5px;
+    }
+
+    .subheading {
+        font-size: 100%;
+    }
+
+    .btn {
+        width: 75px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .weapon {
+        font-size: 200%;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .selected > p {
+        font-size: 100%;
+    }
+
+    .score-board > p {
+        color: red;
+        font-size: 150%;
+    }
+
+}
