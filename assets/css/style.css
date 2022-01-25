@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Unica+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Unica One', sans-serif;
+    background: #ff0000;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.heading {
+    color: yellow;
+    font-family: 'Bangers', sans-serif;
+    font-size: 400%;
+}
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: 'Unica One', sans-serif;
+    font-size: 150%;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:active, .btn:hover {
+    border: 3px solid black;
+}
+
+.btn-easy {
+    background-color: green;
+}
+
+.btn-normal {
+    background-color: orange;
+}
+
+.btn-hard {
+    background-color: red;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 200%;
+    margin: 10px 0 50px 0;
+}
+
+.game-area {
+    background-color: white;
+    width: 85%;
+    height: fit-content;
+    margin: auto;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.score-board {
+    margin-bottom: 50px;
+    display: inline-flex;
+}
+
+.score-board > p {
+    color: red;
+    font-size: 300%;
+}
+
+#player-score {
+    color: black;
+    float: right;
+    margin-left: 10px;
+}
+
+#computer-score {
+    color: black;
+    float: left;
+    margin-right: 10px;
+}
+
+.player-controls {
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weapon {
+    background-color: white;
+    color: #000000;
+    border: 3px solid red;
+    font-size: 400%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.weapon:active, .weapon:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.selected {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.score-board, .selected {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.selected > p {
+    font-size: 200%;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 250%;
+    width: 200px;
+    margin: 30px auto;
+}
+
+.rules-area {
+    margin: 20px;
+}
+
+.rules-area h2 {
+    color: yellow;
+    font-size: 200%;
+}
+
+.rules-area li {
+    list-style-type: none;
+    color: yellow;
+    font-size: 150%;
+}
