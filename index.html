@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Scissors Lizard Spock</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+    </header>
+    <div class="game-area">
+
+        <div class="difficulty-area">
+            <h2>Choose Difficulty</h2>
+            <button onclick = "selectDifficulty('easy')" class = "btn btn-easy" aria-label = "Easy Difficulty"></button>
+            <button onclick = "selectDifficulty('normal')" class = "btn btn-normal" aria-label = "Normal Difficulty"></button>
+            <button onclick = "selectDifficulty('hard')" class = "btn btn-hard" aria-label = "Hard Difficulty"></button>
+        </div>
+        <div class="moves-remaining">
+            <span id="moves-counter"></span>
+        </div>
+        <div class="player-controls">
+            <button onclick = "checkResult('rock')" class = "weapon" aria-label = "rock"></button>
+            <button onclick = "checkResult('paper')" class = "weapon" aria-label = "paper"></button>
+            <button onclick = "checkResult('scissors')" class = "weapon" aria-label = "scissors"></button>
+            <button onclick = "checkResult('lizard')" class = "weapon" aria-label = "lizard"></button>
+            <button onclick = "checkResult('spock')" class = "weapon" aria-label = "spock"></button>
+        </div>
+        <div class="score-board"></div>
+    </div>
+    <footer>
+        <div class="rules-area"></div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
