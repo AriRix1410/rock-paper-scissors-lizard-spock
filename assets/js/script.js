@@ -65,8 +65,29 @@ function selectDifficulty(difficultyRating) {
 
 // moves counter begins on mouse click of weapons button
 // check results of player selection vs computer generated
-function checkResult();
+function checkResult(selected){
+    let weaponSelect = ["rock", "paper", "scissors", "lizard", "spock"];
+    let num = Math.floor(Math.random()*5);
+
+    document.getElementById("moves-counter").innerText = movesCounter;
+
+    let computerSelected = weaponSelect[num];
+
+    switch(selectedWeapon[selected][computerSelected]){
+        case 'win':
+            playerScore++;
+            break;
+        case 'lose':
+            computerScore++;
+            break;
+        default:
+            break;
+    }
+}
 
 // when counter gets to zero then winner is declared
 // game over and reload
 function gameOver();
+
+selectDifficulty();
+checkResult();
