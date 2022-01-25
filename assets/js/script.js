@@ -49,7 +49,19 @@ let selectedWeapon = {
 
 // function to change moves allowed based on game difficulty on mouse click of difficulty buttons
 // if unclick then default is normal mode
-function selectDifficulty();
+function selectDifficulty(difficultyRating) {
+    let easyMoves = 7;
+    let normalMoves = 5;
+    let hardMoves = 3;
+
+    if (difficultyRating == "easy") {
+        maxMoves = easyMoves;
+    } else if (difficultyRating == "hard") {
+        maxMoves = hardMoves;
+    } else maxMoves = normalMoves;
+
+    document.getElementById("moves-counter").innerText = maxMoves;
+}
 
 // moves counter begins on mouse click of weapons button
 // check results of player selection vs computer generated
