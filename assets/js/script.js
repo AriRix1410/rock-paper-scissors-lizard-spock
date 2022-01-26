@@ -105,14 +105,18 @@ function checkResult(selected){
         if (playerScore > computerScore) {
             document.getElementById("result").innerHTML = "YOU WIN!";
         } else if (playerScore < computerScore) {
-            document.getElementById("result").innerHTML = "YOU LOSE";
-        } else document.getElementById("result") = "IT'S A DRAW";
+            document.getElementById("result").innerHTML = "YOU LOSE!";
+        } else document.getElementById("result") = "IT'S A DRAW!";
     }
 
     if (movesCounter ==0) {
         document.getElementById('message').innerHTML = `GAME OVER!`;
+        document.getElementById('message').style.fontSize = '300%';
         document.getElementById('game-zone').style.visibility='hidden';
         document.getElementById('game-zone').style.display = "none";
+
+        document.getElementById('difficulty-area').style.visibility='hidden';
+        document.getElementById('difficulty-area').style.display = "none";
 
         document.getElementById('play-again').style.visibility='visible';
         document.getElementById('play-again').style.display = "inherit";
