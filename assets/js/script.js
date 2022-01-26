@@ -1,11 +1,12 @@
-// "Play Again button hidden until game over"
+// play again button hidden until game over
 document.getElementById('play-again').style.visibility='hidden';
 document.getElementById('play-again').style.display = "none";
+
 
 // variables
 var computerScore = 0;
 var playerScore = 0;
-var moves = 0;
+var moves = 1;
 var maxMoves = document.getElementById("moves-counter").innerText;
 
 // create object for outcomes of weapon selection
@@ -58,6 +59,11 @@ function selectDifficulty(difficultyRating) {
     var easyMoves = 7;
     var normalMoves = 5;
     var hardMoves = 3;
+    
+    // resets counter and score board if difficulty switched during game play
+    moves = 0;
+    computerScore = 0;
+    playerScore = 0;
 
     if (difficultyRating == "easy") {
         maxMoves = easyMoves;

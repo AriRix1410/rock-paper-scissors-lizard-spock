@@ -1,108 +1,164 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors Lizard Spock
 
-Welcome AriRix1410,
+Rock Paper Scissors Lizard Spock is a variation of the traditional Rock Paper Scissors game and was first introduced on the TV show The Big Bang Theory. In this game, users will play against the computer. The user will select a "weapon" of choice and this will be compared to a completely randomly generated computer selection and a winner determined.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Users will learn the rules of the game in order to understand which selections win or lose against others. There is no skill level required to play this game as it is a game of chance and is targetted at both adults and children alike.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive Mockup](/assets/images/mock-up.png)
 
-## Gitpod Reminders
+## Features 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+- __Header__
+  - This is featured at the top of the page and is fully responsive down to 320px width.
+  - The font is Bangers and has been used because it has a resemblance to a comic book style font. The colors used are aslo based on a comic book style, particularly The Flash as this is popular with Sheldon Cooper from The Big Bang Theory.
+  - The header clearly tells users what game they are playing. 
 
-A blue button should appear to click: _Make Public_,
+![Header/Nav Bar](/assets/images/page-header.png)
 
-Another blue button should appear to click: _Open Browser_.
+- __Difficulty Selection__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - This section includes a photograph with text overlay to allow users to see exactly what the page is about and what the intended use of the page is.
+  - The image chosen for the landing page is one of "Pannekaken", or Norwegian Pancakes. These are depicted in heart shapes in an effort to indicate a love for Nordic cuisine to the user.
 
-A blue button should appear to click: _Make Public_,
+![Landing Page](/assets/images/choose-difficulty.png)
 
-Another blue button should appear to click: _Open Browser_.
+- __Favourite Recipes Section__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - This section allows users to see what recipes are the most popular amongst other users.
+  - This section will be updated to allow users to see what are currently the most popular recipes.
+  - The images in this section are links to open a page for that recipe.
+  - When in desktop view, the images on this section have a hover feature that gives a fade effect with the names of the recipes overlayed. This has been removed for smaller screens and the recipe will be visible without the need to hover.
 
-To log into the Heroku toolbelt CLI:
+![Favourite Recipes](/assets/images/readme/favourites-section.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __Leave a Review Section__
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - This section will allow users to rate recipes.
+  - This section will allow users to submit comments and reviews about specific recipes.
 
-------
+![Leave a Review Section](/assets/images/readme/review-section.png)
 
-## Release History
+- __User Reviews Section__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  - This section will allow users to see the recipe reviews of other users.
+  - This section is aimed to inspire users to both try the recipes and also to leave a review themselves.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![User Reviews Section](/assets/images/readme/user-reviews.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- __The Footer__ 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  - The footer section houses links to social media sites, these links open in a new tab.
+  - For larger screen sizes the footer is fixed to allow users the ability to access the links without having to scroll to the bottom of the page.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Footer](/assets/images/readme/footer.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __Recipes__
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - This page will allow users to select which category of recipe they are looking for, Drinks, Savoury or Sweet.
+  - The images on this page are links to open a page for the users chosen recipe category.
+  - When in desktop view, the images on this page have a hover feature that displays a faded effect with the names of the recipe catergories overlayed. On smaller screens this is removed and the category names are always visible.  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Recipes](/assets/images/readme/recipes-page.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- __Recipe Category Pages__
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - There are three category pages; Drinks, Savoury and Sweet.
+  - The images on these pages are links to open specific recipe pages.
+  - When in desktop view, the images on these pages have a hover feature that display a faded effect with the names of the specific recipes overlayed. On smaller screens this is removed and the recipe names are always visible.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Recipe Selection](/assets/images/readme/recipe-selection.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- __Specific Recipe Pages__
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  - The individual recipe pages allow the user to see an image of the food, the ingredients needed and the method.
+  - The images on these pages are links to open specific recipe pages.
+  - When in desktop view, the images on these pages have a hover feature that display a faded effect with the names of the specific recipes overlayed. On smaller screens this is removed and the recipe names are always visible.
+  - There is a back button at the bottom of each recipe to take you back to the category page the recipe is featured on in order to make it easier for users to get back to that page. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Recipe Selection](/assets/images/readme/recipe-pages.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- __Get In Touch Page__
 
-------
+  - This page will allow the users to sign up and also to leave a message.
+  - The message feature will allow the user to make suggestions about featured recipes.
 
-## FAQ about the uptime script
+![Get In Touch](/assets/images/readme/get-in-touch.png)
 
-**Why have you added this script?**
+### Features Left to Implement
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- A feature I would like to add in the future is a search bar to be able to search for a recipe based off a particular ingredient
 
-**How will this affect me?**
+## Testing 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- The site has been tested on Chrome, Microsoft Edge and Firefox.
+- I have confirmed that the site is responsive, looks good and is fuctional on all screen sizes down to 320px. This has been done by testing on the dev tools device toolbar on Chrome as well as double checking on my own devices.
+- I have confirmed that both forms work. They require entry in all fields (with the exception of the review message box which I have left optional), both select drop downs require a selected object and the submit button works. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Validator Testing 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Faririx1410.github.io%2Fnordic-kitchen%2F)
+  - ![W3C validator](/assets/images/readme/w3c-validator.png)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Faririx1410.github.io%2Fnordic-kitchen%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - ![(Jigsaw) validator](/assets/images/readme/jigsaw.png)
+- Accessibility
+  - I have checked accessibilty by running through Lighthouse via devtools
+  - ![Lighthouse](/assets/images/readme/lighthouse.png)
 
-**So….?**
+### Bugs
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- I noticed that when checking the responsiveness on smaller screen sizes, I had developed a slight horizontal scroll. Using Chrome Dev Tools I could see that there were elements on the page that were slightly larger than the screen width. Upon further investigation it became apparent that this was the width of the hover effect I had put on the images in the Favourites section, after restyling this, the scroll was removed.
+- When running the home page through Lighthouse, the Accessibility was showing as 97. Examining this showed an issue with poor contrast on the form submit button. After changing the colour of the text and background of the button, this was ran again and gave a score of 100.
+- When using the W3C validator, "error element option without attribute label must not be empty" was being displayed. Every attempt at fixing this bug created an entirely new bug. After a lot of searching through various channels, I was able to correct this using a non-breaking space.
 
-**Can I opt out?**
+### Unfixed Bugs
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- No unfixed bugs
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Deployment
 
-**Anything more?**
+- The site has been deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab
+  - Scroll down to GitHub Pages and select on the "Check It Out Here" link
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, click save.
+  - The page will be automatically refreshed with a message stating successful deployment
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The live link can be found here - https://aririx1410.github.io/nordic-kitchen/
 
----
+## Credits  
 
-Happy coding!
+### Content 
+
+- The initial code for the header, footer and circle images/containers was taken from the Code Institute [Love Running](https://learn.codeinstitute.net/dashboard) project
+- Use of a Z-index for fixed header/footer was taken from [Code Convey](https://codeconvey.com/css-fixed-header-scrolling-body/)
+- [Stack Overflow](https://stackoverflow.com) was a great source of information but was particularly used for help making header/footer static for smaller screens [here](https://stackoverflow.com/questions/21252631/what-is-the-opposite-of-positionfixed-css), when making the hover effect on recipe images [here](https://stackoverflow.com/questions/11869805/how-do-i-make-an-invisible-text-input-box-visible-on-hover), creating a message box on a form [here](https://stackoverflow.com/questions/54827262/contact-form-text-area-enters-and-scrolling) and fixing an error in the review form [here](https://stackoverflow.com/questions/22237658/html5-validation-error-with-select-required-attribute/31800584)
+- Help centering the hover overlay text was found [here](https://iampalash.hashnode.dev/center-text-vertically-and-horizontally-in-css)
+- [W3Schools](https://www.w3schools.com) was very informative throughout especially for understanding inline/block/inline-block displays [here](https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1)
+- Code was taken from [here](https://codepen.io/z9group/pen/rjqBow) when making the drop downs on the review form.
+- To make the user reviews section, code was initially taken from [here](https://www.youtube.com/watch?v=O-QUBZuZlXM)
+- The star icons in the reviews sections, undo icon on recipe pages and social media icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+### Recipes
+
+- Apple Punsch - [AllRecipes](http://allrecipes.co.uk/recipe/6299/hot-spiced-apple-punch.aspx)
+- Baked Salmon - [Downshiftology](https://downshiftology.com/recipes/dijon-baked-salmon/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
+- Elk Burger - [EatElkMeat.com](https://eatelkmeat.com/recipes/elk-burger/)
+- Glogg - [TheSpruceEats](https://www.thespruceeats.com/traditional-glogg-recipe-3510987?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
+- Kanelbullar - [LondonEats](https://londoneats.wordpress.com/2012/02/19/kanelbullar-swedish-cinnamon-buns/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
+- Norwegian Waffles - [MainlyFood](http://www.mainlyfood.com/norwegian-waffles/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
+- Orange White Wine Punsch - [Saveur](https://www.saveur.com/article/Recipes/White-Wine-Punch/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
+- Risgrynsgröt - [Food.com](https://www.food.com/recipe/norwegian-rice-pudding-438557?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
+- Swedish Meatballs - [DamnDelicious](https://damndelicious.net/2014/02/21/swedish-meatballs/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
+
+### Media
+
+- All images used are from [Pixabay](https://pixabay.com/)
+- Favicon.ico icon was generated by [Favicon-Generator](https://www.favicon-generator.org/) using a logo that I created on Logo Maker app by Iris Studios
+
+### Special Thanks
+
+- Thanks to my mentor Caleb Mbakwe for his insight and guidance throughout this project.
