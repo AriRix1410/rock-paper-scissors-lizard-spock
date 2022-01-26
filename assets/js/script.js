@@ -64,6 +64,8 @@ function selectDifficulty(difficultyRating) {
     } else if (difficultyRating == "hard") {
         maxMoves = hardMoves;
     } else maxMoves = normalMoves;
+
+    document.getElementById("moves-counter").innerText = maxMoves;
 }
 
 // on mouse click of weapon buttons
@@ -101,8 +103,8 @@ function checkResult(selected){
         document.getElementById("computer-selected").innerHTML = "Computer is thinking...";
         document.getElementById("player-selected").innerHTML = "Player... make your move";
     } else {
-        document.getElementById("computer-selected").innerHTML = "Computer picked ${weaponSelect[num]}";
-        document.getElementById("player-selected").innerHTML = "You picked ${selected}";
+        document.getElementById("computer-selected").innerHTML = `Computer picked ${weaponSelect[num]}`;
+        document.getElementById("player-selected").innerHTML = `You picked ${selected}`;
     }
 
 // when counter gets to zero, game over
