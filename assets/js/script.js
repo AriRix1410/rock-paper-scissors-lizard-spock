@@ -7,7 +7,7 @@ document.getElementById('game-zone').style.display = "none";
 document.getElementById('score-board').style.visibility='hidden';
 document.getElementById('score-board').style.display = "none";
  // change message to choose difficulty
- document.getElementById('message').innerHTML = "Choose difficulty to play";
+ document.getElementById('message').innerHTML = "Select difficulty to play";
 
 // variables
 var computerScore = 0;
