@@ -1,13 +1,15 @@
-// variables
-let computerScore = 0;
-let playerScore = 0;
-let moves = 0;
+// "Play Again button hidden until game over"
 document.getElementById('play-again').style.visibility='hidden';
 document.getElementById('play-again').style.display = "none";
-// let result = document.getElementById("result");
+
+// variables
+var computerScore = 0;
+var playerScore = 0;
+var moves = 0;
+var maxMoves = document.getElementById("moves-counter").innerText;
 
 // create object for outcomes of weapon selection
-let selectedWeapon = {
+var selectedWeapon = {
     'rock' : {
         'rock' : 'draw',
         'scissors' : 'win',
@@ -47,38 +49,43 @@ let selectedWeapon = {
         'lizard' : 'lose',
         'spock' : 'draw'
     },
-}
+};
 
 // function to change moves allowed based on game difficulty
 // on mouse click of difficulty buttons
 // if unclicked then default is normal mode
 function selectDifficulty(difficultyRating) {
-    let easyMoves = 7;
-    let normalMoves = 5;
-    let hardMoves = 3;
+    var easyMoves = 7;
+    var normalMoves = 5;
+    var hardMoves = 3;
 
     if (difficultyRating == "easy") {
         maxMoves = easyMoves;
     } else if (difficultyRating == "hard") {
         maxMoves = hardMoves;
     } else maxMoves = normalMoves;
-
-    document.getElementById("moves-counter").innerText = maxMoves;
 }
 
 // on mouse click of weapon buttons
 // begins moves counter and
 // checks result of player selection vs computer generated
 function checkResult(selected){
-    let weaponSelect = ["rock", "paper", "scissors", "lizard", "spock"];
-    let num = Math.floor(Math.random()*5);
-    let movesCounter = maxMoves-moves;
+    var weaponSelect = ["rock", "paper", "scissors", "lizard", "spock"];
+    
+    // generate random number
+    var num = Math.floor(Math.random()*5);
+    var movesCounter = maxMoves-moves;
     moves++;
 
     document.getElementById("moves-counter").innerText = movesCounter;
 
-    let computerSelected = weaponSelect[num];
+    // generates random weapon selection from array
+    var computerSelected = weaponSelect[num];
 
+    // switch to increment score
+    // if case is win then player score to increment by one,
+    // if case is lose then computer score to incremnt by one,
+    // otherwise no change
     switch(selectedWeapon[selected][computerSelected]){
         case 'win':
             playerScore++;
@@ -91,11 +98,11 @@ function checkResult(selected){
     }
 
     if (movesCounter == maxMoves) {
-        document.getElementById("computer-selected").innerHTML = `Computer is thinking...`;
-        document.getElementById("player-selected").innerHTML = `Player... make your move`;
+        document.getElementById("computer-selected").innerHTML = "Computer is thinking...";
+        document.getElementById("player-selected").innerHTML = "Player... make your move";
     } else {
-        document.getElementById("computer-selected").innerHTML = `Computer picked ${weaponSelect[num]}`;
-        document.getElementById("player-selected").innerHTML = `You picked ${selected}`;
+        document.getElementById("computer-selected").innerHTML = "Computer picked ${weaponSelect[num]}";
+        document.getElementById("player-selected").innerHTML = "You picked ${selected}";
     }
 
 // when counter gets to zero, game over
@@ -106,28 +113,26 @@ function checkResult(selected){
             document.getElementById("result").innerHTML = "YOU WIN!";
         } else if (playerScore < computerScore) {
             document.getElementById("result").innerHTML = "YOU LOSE!";
-        } else document.getElementById("result") = "IT'S A DRAW!";
+        } else document.getElementById("result").innerHTML = "IT'S A DRAW!";
     }
 
     if (movesCounter ==0) {
-        document.getElementById('message').innerHTML = `GAME OVER!`;
+        // change message to game over
+        document.getElementById('message').innerHTML = "GAME OVER!";
         document.getElementById('message').style.fontSize = '300%';
+        // hide weapon buttons and selection text
         document.getElementById('game-zone').style.visibility='hidden';
         document.getElementById('game-zone').style.display = "none";
-
+        // hide difficulty buttons
         document.getElementById('difficulty-area').style.visibility='hidden';
         document.getElementById('difficulty-area').style.display = "none";
-
+        // make play again button visible
         document.getElementById('play-again').style.visibility='visible';
         document.getElementById('play-again').style.display = "inherit";
     }
 
     document.getElementById("computer-score").innerHTML = computerScore;
     document.getElementById("player-score").innerHTML = playerScore;
-}
-
-function playAgain() {
-    
 }
 
 selectDifficulty();
