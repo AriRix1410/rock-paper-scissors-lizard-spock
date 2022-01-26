@@ -2,7 +2,9 @@
 let computerScore = 0;
 let playerScore = 0;
 let moves = 0;
-let result = document.getElementById("result");
+document.getElementById('play-again').style.visibility='hidden';
+document.getElementById('play-again').style.display = "none";
+// let result = document.getElementById("result");
 
 // create object for outcomes of weapon selection
 let selectedWeapon = {
@@ -96,19 +98,24 @@ function checkResult(selected){
         document.getElementById("player-selected").innerHTML = `You picked ${selected}`;
     }
 
-// when counter gets to zero, a winner is declared
+// when counter gets to zero, game over
+// gets player and computer scores and compares value 
+// a winner is declared
     if (movesCounter == 0) {
         if (playerScore > computerScore) {
-            result.innerHTML = "YOU WIN!";
+            document.getElementById("result").innerHTML = "YOU WIN!";
         } else if (playerScore < computerScore) {
-            result.innerHTML = "YOU LOSE";
-        } else result.innerHTML = "IT'S A DRAW";
+            document.getElementById("result").innerHTML = "YOU LOSE";
+        } else document.getElementById("result") = "IT'S A DRAW";
     }
 
     if (movesCounter ==0) {
         document.getElementById('message').innerHTML = `GAME OVER!`;
         document.getElementById('game-zone').style.visibility='hidden';
         document.getElementById('game-zone').style.display = "none";
+
+        document.getElementById('play-again').style.visibility='visible';
+        document.getElementById('play-again').style.display = "inherit";
     }
 
     document.getElementById("computer-score").innerHTML = computerScore;

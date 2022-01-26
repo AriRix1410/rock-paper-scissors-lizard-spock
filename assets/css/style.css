@@ -51,6 +51,10 @@ header {
     background-color: red;
 }
 
+.reload-btn {
+    background-color: black;
+}
+
 .subheading {
     text-align: center;
     font-size: 200%;
@@ -128,7 +132,7 @@ header {
 }
 
 #result {
-    font-size: 250%;
+    font-size: 500%;
     width: 200px;
     margin: 30px auto;
 }
@@ -159,6 +163,7 @@ header {
 
     .subheading {
         font-size: 100%;
+        margin: 10px 0 25px 0;
     }
 
     .btn {
@@ -166,6 +171,11 @@ header {
         height: 40px;
         margin: 5px;
         font-size: 125%;
+    }
+
+    .reload-btn {
+        width: 150px;
+        margin-top: -15px;
     }
 
     .weapon {
@@ -183,6 +193,11 @@ header {
     .score-board > p {
         color: red;
         font-size: 150%;
+    }
+
+    #result {
+        font-size: 400%;
+        margin: 10px auto;
     }
 
 }
