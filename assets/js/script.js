@@ -1,7 +1,13 @@
 // play again button hidden until game over
 document.getElementById('play-again').style.visibility='hidden';
 document.getElementById('play-again').style.display = "none";
-
+// hide weapon buttons and score board until difficulty selected
+document.getElementById('game-zone').style.visibility='hidden';
+document.getElementById('game-zone').style.display = "none";
+document.getElementById('score-board').style.visibility='hidden';
+document.getElementById('score-board').style.display = "none";
+ // change message to choose difficulty
+ document.getElementById('message').innerHTML = "Choose difficulty to play";
 
 // variables
 var computerScore = 0;
@@ -54,24 +60,37 @@ var selectedWeapon = {
 
 // function to change moves allowed based on game difficulty
 // on mouse click of difficulty buttons
-// if unclicked then default is normal mode
 function selectDifficulty(difficultyRating) {
     var easyMoves = 7;
     var normalMoves = 5;
     var hardMoves = 3;
-    
+
     // resets counter and score board if difficulty switched during game play
-    moves = 0;
+    moves = 1;
     computerScore = 0;
     playerScore = 0;
 
     if (difficultyRating == "easy") {
         maxMoves = easyMoves;
+        document.getElementById("computer-score").innerHTML = 0;
+        document.getElementById("player-score").innerHTML = 0;
     } else if (difficultyRating == "hard") {
         maxMoves = hardMoves;
+        document.getElementById("computer-score").innerHTML = 0;
+        document.getElementById("player-score").innerHTML = 0;
     } else maxMoves = normalMoves;
+        document.getElementById("computer-score").innerHTML = 0;
+        document.getElementById("player-score").innerHTML = 0;
 
     document.getElementById("moves-counter").innerText = maxMoves;
+    
+    // make weapon buttons and score-board visible
+    document.getElementById('game-zone').style.visibility='visible';
+    document.getElementById('game-zone').style.display = "inherit";
+    document.getElementById('score-board').style.visibility='visible';
+    document.getElementById('score-board').style.display = "inline-flex";
+    // change message to select your weapon
+    document.getElementById('message').innerHTML = "Select your weapon";
 }
 
 // on mouse click of weapon buttons
@@ -142,6 +161,3 @@ function checkResult(selected){
     document.getElementById("computer-score").innerHTML = computerScore;
     document.getElementById("player-score").innerHTML = playerScore;
 }
-
-selectDifficulty();
-checkResult();

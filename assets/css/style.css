@@ -70,12 +70,12 @@ header {
     border-radius: 10px;
 }
 
-.score-board {
+#score-board {
     margin-bottom: 50px;
     display: inline-flex;
 }
 
-.score-board > p {
+#score-board > p {
     color: red;
     font-size: 300%;
 }
@@ -120,7 +120,7 @@ header {
     text-align: center;
 }
 
-.score-board, .selected {
+#score-board, .selected {
     font-weight: 400;
     font-size: 15px;
 }
@@ -150,6 +150,7 @@ header {
     list-style-type: none;
     color: yellow;
     font-size: 150%;
+    display: inline;
 }
 
 /* for smaller screen sizes */
@@ -190,7 +191,7 @@ header {
         font-size: 100%;
     }
 
-    .score-board > p {
+    #score-board > p {
         color: red;
         font-size: 150%;
     }
