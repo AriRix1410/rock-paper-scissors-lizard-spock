@@ -96,7 +96,7 @@ header {
 #player-controls {
     width: 90%;
     margin: 10px;
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
 }
 
@@ -203,6 +203,7 @@ header {
 
     .rules-area li {
         font-size: 120%;
+        color: black;
         display: inline-flex;
     }
 

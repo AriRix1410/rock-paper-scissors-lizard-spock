@@ -24,16 +24,16 @@ Users will learn the rules of the game in order to understand which selections w
 
 ![Landing Page](/assets/images/choose-difficulty.png)
 
-- __Favourite Recipes Section__
+- __Moves Counter__
 
   - This section allows users to see what recipes are the most popular amongst other users.
   - This section will be updated to allow users to see what are currently the most popular recipes.
   - The images in this section are links to open a page for that recipe.
   - When in desktop view, the images on this section have a hover feature that gives a fade effect with the names of the recipes overlayed. This has been removed for smaller screens and the recipe will be visible without the need to hover.
 
-![Favourite Recipes](/assets/images/readme/favourites-section.png)
+![Favourite Recipes](/assets/images/moves-counter.png)
 
-- __Leave a Review Section__
+- __Weapon Selection__
 
   - This section will allow users to rate recipes.
   - This section will allow users to submit comments and reviews about specific recipes.
@@ -106,12 +106,12 @@ Users will learn the rules of the game in order to understand which selections w
   - ![(Jigsaw) validator](/assets/images/readme/jigsaw.png)
 - Accessibility
   - I have checked accessibilty by running through Lighthouse via devtools
-  - ![Lighthouse](/assets/images/readme/lighthouse.png)
+  - ![Lighthouse](/assets/images/lighthouse.png)
 
 ### Bugs
 
-- I noticed that when checking the responsiveness on smaller screen sizes, I had developed a slight horizontal scroll. Using Chrome Dev Tools I could see that there were elements on the page that were slightly larger than the screen width. Upon further investigation it became apparent that this was the width of the hover effect I had put on the images in the Favourites section, after restyling this, the scroll was removed.
-- When running the home page through Lighthouse, the Accessibility was showing as 97. Examining this showed an issue with poor contrast on the form submit button. After changing the colour of the text and background of the button, this was ran again and gave a score of 100.
+- When running through Lighthouse, SEO was showing as 97. Examining this showed an issue with poor contrast on the Hard difficulty button and the rules list. After changing the colour of the text of the button to black, and changing the text color and font size of the list, this was ran again and gave a score of 100.
+- When running through Lighthouse, the Accessibility was showing as 97. Examining this showed an issue with poor contrast on the Hard difficulty button and the rules list. After changing the colour of the text of the button to black, and changing the text color and font size of the list, this was ran again and gave a score of 100.
 - When using the W3C validator, "error element option without attribute label must not be empty" was being displayed. Every attempt at fixing this bug created an entirely new bug. After a lot of searching through various channels, I was able to correct this using a non-breaking space.
 
 ### Unfixed Bugs
@@ -127,7 +127,7 @@ Users will learn the rules of the game in order to understand which selections w
   - Once the master branch has been selected, click save.
   - The page will be automatically refreshed with a message stating successful deployment
 
-The live link can be found here - https://aririx1410.github.io/nordic-kitchen/
+The live link can be found here - https://aririx1410.github.io/rock-paper-scissors-lizard-spock/
 
 ## Credits  
 
@@ -142,22 +142,9 @@ The live link can be found here - https://aririx1410.github.io/nordic-kitchen/
 - To make the user reviews section, code was initially taken from [here](https://www.youtube.com/watch?v=O-QUBZuZlXM)
 - The star icons in the reviews sections, undo icon on recipe pages and social media icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-### Recipes
-
-- Apple Punsch - [AllRecipes](http://allrecipes.co.uk/recipe/6299/hot-spiced-apple-punch.aspx)
-- Baked Salmon - [Downshiftology](https://downshiftology.com/recipes/dijon-baked-salmon/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
-- Elk Burger - [EatElkMeat.com](https://eatelkmeat.com/recipes/elk-burger/)
-- Glogg - [TheSpruceEats](https://www.thespruceeats.com/traditional-glogg-recipe-3510987?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
-- Kanelbullar - [LondonEats](https://londoneats.wordpress.com/2012/02/19/kanelbullar-swedish-cinnamon-buns/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
-- Norwegian Waffles - [MainlyFood](http://www.mainlyfood.com/norwegian-waffles/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
-- Orange White Wine Punsch - [Saveur](https://www.saveur.com/article/Recipes/White-Wine-Punch/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
-- Risgrynsgröt - [Food.com](https://www.food.com/recipe/norwegian-rice-pudding-438557?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
-- Swedish Meatballs - [DamnDelicious](https://damndelicious.net/2014/02/21/swedish-meatballs/?utm_campaign=yummly&utm_medium=yummly&utm_source=yummly)
-
 ### Media
 
-- All images used are from [Pixabay](https://pixabay.com/)
-- Favicon.ico icon was generated by [Favicon-Generator](https://www.favicon-generator.org/) using a logo that I created on Logo Maker app by Iris Studios
+- Favicon.ico icon was generated by [Favicon-Generator](https://www.favicon-generator.org/) using an image of the Spock button in this game
 
 ### Special Thanks
 

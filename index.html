@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A rock, paper, scissors, lizard, spock game">
     <meta name="keywords" content="game, rock, paper, scissors, lizard, spock">
-    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Rock Paper Scissors Lizard Spock</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 </head>
 <body>
@@ -18,7 +20,7 @@
     <!-- game play area -->
     <div class="game-area">
 
-        <!-- choose difficulty -->
+        <!-- choose difficulty buttons -->
         <div id="difficulty-area">
             <h2>Difficulty</h2>
             <button onclick = "selectDifficulty('easy')" class = "btn btn-easy" id = "easy" aria-label = "Easy Difficulty">
@@ -61,14 +63,17 @@
                 <i class="far fa-hand-spock"></i>
             </button>
         </div>
+        <!-- displays player and computer weapon selection -->
         <div class="selected">
             <p id="player-selected">Player...Make your move</p>
             <p id="computer-selected">Computer is thinking</p>
         </div>
         </div>
+        <!-- outcome of round -->
         <div class="selected">
             <p id="result"></p>
         </div>
+        <!-- game score board -->
         <div id="score-board">
             <p>
                 <strong>Player</strong>
@@ -80,10 +85,12 @@
                 <strong>Computer</strong>
             </p>
         </div>
+        <!-- reload or "play again" button -->
         <div id="play-again">
             <button onclick="window.location.href=window.location.href" class = "btn reload-btn">Play Again</button>
         </div>
     </div>
+    <!-- game rules list -->
     <footer>
         <div class="rules-area">
             <h2>Rules</h2>
