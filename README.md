@@ -15,104 +15,95 @@ Users will learn the rules of the game in order to understand which selections w
   - The font is Bangers and has been used because it has a resemblance to a comic book style font. The colors used are aslo based on a comic book style, particularly The Flash as this is popular with Sheldon Cooper from The Big Bang Theory.
   - The header clearly tells users what game they are playing. 
 
-![Header/Nav Bar](/assets/images/page-header.png)
+![Header](/assets/images/page-header.png)
+
+- __Starting The Game__
+
+  - To start the game, a difficulty level must be selected.
+  - This is clearly shown to the user via means of text instruction.
+
+![Game Starting View](/assets/images/start-game.png)
 
 - __Difficulty Selection__
 
-  - This section includes a photograph with text overlay to allow users to see exactly what the page is about and what the intended use of the page is.
-  - The image chosen for the landing page is one of "Pannekaken", or Norwegian Pancakes. These are depicted in heart shapes in an effort to indicate a love for Nordic cuisine to the user.
+  - This section includes 3 buttons for difficulty ratings of Easy, Normal and Hard.
+  - The difference between these levels is the moves allowed before a winner is declared. As a game of probability there is a better chance of winning if the moves allowed are greater.
+  - If a difficulty is selected and the user changes the difficulty during game play, the moves counter will reset to the new difficulty chosen and the score board will also reset.
+  - At game over, these buttons are no longer visible.
+  - The colors used for these buttons are based on the UK traffic light system.
 
-![Landing Page](/assets/images/choose-difficulty.png)
+![Difficulty Selection Buttons](/assets/images/choose-difficulty.png)
 
 - __Moves Counter__
 
-  - This section allows users to see what recipes are the most popular amongst other users.
-  - This section will be updated to allow users to see what are currently the most popular recipes.
-  - The images in this section are links to open a page for that recipe.
-  - When in desktop view, the images on this section have a hover feature that gives a fade effect with the names of the recipes overlayed. This has been removed for smaller screens and the recipe will be visible without the need to hover.
+  - This displays the moves left until the game ends and a winner is declared.
+  - The starting number of moves remaining will change depending on difficulty level. Moves allowed are as follows: Easy = 7, Normal = 5 and Hard = 3. 
+  - Moves remaining will decrease by one upon mouse click of the weapons buttons.
 
-![Favourite Recipes](/assets/images/moves-counter.png)
+![Moves Counter](/assets/images/moves-counter.png)
 
 - __Weapon Selection__
 
-  - This section will allow users to rate recipes.
-  - This section will allow users to submit comments and reviews about specific recipes.
+  - This section allows users to pick a weapon to use against the computer.
+  - On hover, these buttons will turn red with a yellow icon so users can clearly see which weapon they are selecting.
+  - On click of these buttons, the moves counter will decrease by one and text wil be displayed to show what the user has picked and the randomly generated computer selection.
+  - At game over, these buttons are no longer visible.
 
-![Leave a Review Section](/assets/images/readme/review-section.png)
+![Weapon Selection Buttons](/assets/images/choose-weapon.png)
 
-- __User Reviews Section__
+- __Score Board__
 
-  - This section will allow users to see the recipe reviews of other users.
-  - This section is aimed to inspire users to both try the recipes and also to leave a review themselves.
+  - This section will show users what the score is of the game.
+  - At game over, this remains visible so users are able to clearly see what their total score was. 
 
-![User Reviews Section](/assets/images/readme/user-reviews.png)
+![Game Score Board](/assets/images/score-board.png)
 
-- __The Footer__ 
+- __The Footer/Rules Area__ 
 
-  - The footer section houses links to social media sites, these links open in a new tab.
-  - For larger screen sizes the footer is fixed to allow users the ability to access the links without having to scroll to the bottom of the page.
+  - The footer section houses a list of the game rules.
+  - For larger screen sizes, the text for the rules is white and display is inline as this looked more eye catching and clearly shows the rules upon page loading.
+  - At smaller screen sizes the text is black and has block display to allow for better user accessibilty.
 
-![Footer](/assets/images/readme/footer.png)
+![Rules List](/assets/images/rules-area.png)
 
-- __Recipes__
+- __Game Over__
 
-  - This page will allow users to select which category of recipe they are looking for, Drinks, Savoury or Sweet.
-  - The images on this page are links to open a page for the users chosen recipe category.
-  - When in desktop view, the images on this page have a hover feature that displays a faded effect with the names of the recipe catergories overlayed. On smaller screens this is removed and the category names are always visible.  
+  - Once the moves counter gets to zero then the game is over.
+  - This is made clear to the user by displaying a game over message, the outcome of the game and the scores.
+  - At game over, a button to play the game again will become visible and on click will reload the page.
 
-![Recipes](/assets/images/readme/recipes-page.png)
-
-- __Recipe Category Pages__
-
-  - There are three category pages; Drinks, Savoury and Sweet.
-  - The images on these pages are links to open specific recipe pages.
-  - When in desktop view, the images on these pages have a hover feature that display a faded effect with the names of the specific recipes overlayed. On smaller screens this is removed and the recipe names are always visible.
-
-![Recipe Selection](/assets/images/readme/recipe-selection.png)
-
-- __Specific Recipe Pages__
-
-  - The individual recipe pages allow the user to see an image of the food, the ingredients needed and the method.
-  - The images on these pages are links to open specific recipe pages.
-  - When in desktop view, the images on these pages have a hover feature that display a faded effect with the names of the specific recipes overlayed. On smaller screens this is removed and the recipe names are always visible.
-  - There is a back button at the bottom of each recipe to take you back to the category page the recipe is featured on in order to make it easier for users to get back to that page. 
-
-![Recipe Selection](/assets/images/readme/recipe-pages.png)
-
-- __Get In Touch Page__
-
-  - This page will allow the users to sign up and also to leave a message.
-  - The message feature will allow the user to make suggestions about featured recipes.
-
-![Get In Touch](/assets/images/readme/get-in-touch.png)
+![Game Over](/assets/images/game-over.png)
 
 ### Features Left to Implement
 
-- A feature I would like to add in the future is a search bar to be able to search for a recipe based off a particular ingredient
+- A feature I would like to add in the future is to have optional sound effects for the user. Such as for weapon selection and for game outcomes.
 
 ## Testing 
 
-- The site has been tested on Chrome, Microsoft Edge and Firefox.
+- The site has been tested on Chrome, Microsoft Edge and Firefox and Opera.
 - I have confirmed that the site is responsive, looks good and is fuctional on all screen sizes down to 320px. This has been done by testing on the dev tools device toolbar on Chrome as well as double checking on my own devices.
-- I have confirmed that both forms work. They require entry in all fields (with the exception of the review message box which I have left optional), both select drop downs require a selected object and the submit button works. 
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Faririx1410.github.io%2Fnordic-kitchen%2F)
-  - ![W3C validator](/assets/images/readme/w3c-validator.png)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Faririx1410.github.io%2Frock-paper-scissors-lizard-spock%2F)
+  - ![W3C validator](/assets/images/w3c-validator.png)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Faririx1410.github.io%2Fnordic-kitchen%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-  - ![(Jigsaw) validator](/assets/images/readme/jigsaw.png)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Faririx1410.github.io%2Frock-paper-scissors-lizard-spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - ![(Jigsaw) validator](/assets/images/jigsaw.png)
+  JavaScript
+  - No significant issues were found when passing through the official [JSHint Javascript validator](https://jshint.com/)
+  - After investigation, despite displaying that there are two unused variables, this is not the case. These are both functions that are called upon within the HTML via use of onclick attribute buttons as shown in Code Institute JavaScript Essentials, JavaScript & the DOM.
+  - ![(Jigsaw) validator](/assets/images/jshint.png)
 - Accessibility
   - I have checked accessibilty by running through Lighthouse via devtools
   - ![Lighthouse](/assets/images/lighthouse.png)
 
 ### Bugs
 
-- When running through Lighthouse, SEO was showing as 97. Examining this showed an issue with poor contrast on the Hard difficulty button and the rules list. After changing the colour of the text of the button to black, and changing the text color and font size of the list, this was ran again and gave a score of 100.
+- When running through Lighthouse, SEO was showing as 91. Examining this showed that the document did not have a meta description.After adding this in the HTML, this was ran again and gave a score of 100.
 - When running through Lighthouse, the Accessibility was showing as 97. Examining this showed an issue with poor contrast on the Hard difficulty button and the rules list. After changing the colour of the text of the button to black, and changing the text color and font size of the list, this was ran again and gave a score of 100.
-- When using the W3C validator, "error element option without attribute label must not be empty" was being displayed. Every attempt at fixing this bug created an entirely new bug. After a lot of searching through various channels, I was able to correct this using a non-breaking space.
+- I initially had an issue where the game counter was starting at one below the specified game moves. After looking at this it became apparent that I had called the function again at the end of the code, thus making it appear that there had already been an initial button click on loading the page. After remove this, the issue is resolved.
 
 ### Unfixed Bugs
 
@@ -133,14 +124,11 @@ The live link can be found here - https://aririx1410.github.io/rock-paper-scisso
 
 ### Content 
 
-- The initial code for the header, footer and circle images/containers was taken from the Code Institute [Love Running](https://learn.codeinstitute.net/dashboard) project
-- Use of a Z-index for fixed header/footer was taken from [Code Convey](https://codeconvey.com/css-fixed-header-scrolling-body/)
-- [Stack Overflow](https://stackoverflow.com) was a great source of information but was particularly used for help making header/footer static for smaller screens [here](https://stackoverflow.com/questions/21252631/what-is-the-opposite-of-positionfixed-css), when making the hover effect on recipe images [here](https://stackoverflow.com/questions/11869805/how-do-i-make-an-invisible-text-input-box-visible-on-hover), creating a message box on a form [here](https://stackoverflow.com/questions/54827262/contact-form-text-area-enters-and-scrolling) and fixing an error in the review form [here](https://stackoverflow.com/questions/22237658/html5-validation-error-with-select-required-attribute/31800584)
-- Help centering the hover overlay text was found [here](https://iampalash.hashnode.dev/center-text-vertically-and-horizontally-in-css)
-- [W3Schools](https://www.w3schools.com) was very informative throughout especially for understanding inline/block/inline-block displays [here](https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1)
-- Code was taken from [here](https://codepen.io/z9group/pen/rjqBow) when making the drop downs on the review form.
-- To make the user reviews section, code was initially taken from [here](https://www.youtube.com/watch?v=O-QUBZuZlXM)
-- The star icons in the reviews sections, undo icon on recipe pages and social media icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The initial inspiration and code for this project was taken from [Abhi Develops](https://dev.to/abhidevelopssuntech/how-to-make-rock-paper-scissors-in-javascript-47ef) and then edited and expanded for my own requirements.
+- [Stack Overflow](https://stackoverflow.com) was a great source of information but was particularly used for help hiding divs during different game play stages [here](https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript), when making the reload or play again button [here](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click) and most of all for help setting my moves counter, where I ended up physically asking for help after struggling for a few days with teh same issue [here](https://stackoverflow.com/questions/70772896/how-do-i-change-amount-of-game-moves-for-different-game-difficulties)
+- [W3Schools](https://www.w3schools.com) was very informative throughout especially for understanding objects [here](https://www.w3schools.com/js/js_object_methods.asp) and variables [here](https://www.w3schools.com/js/js_variables.asp)
+- [Code Institute](https://learn.codeinstitute.net/) JavaScript Essentials tutorials were consulted throughout for clarification and understanding.
+- All of the icons used in this project came from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 

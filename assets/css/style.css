@@ -204,7 +204,7 @@ header {
     .rules-area li {
         font-size: 120%;
         color: black;
-        display: inline-flex;
+        display: block;
     }
 
 }
