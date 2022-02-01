@@ -29,26 +29,26 @@ header {
     height: 60px;
     font-family: 'Unica One', sans-serif;
     font-size: 150%;
-    color: white;
+    background-color: black;
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .btn:active, .btn:hover {
-    border: 3px solid black;
+    border: 3px solid red;
 }
 
 .btn-easy {
-    background-color: green;
+    color: greenyellow;
 }
 
 .btn-normal {
-    background-color: purple;
+    color: orange;
 }
 
 .btn-hard {
-    background-color: red;
+    color: red;
 }
 
 .reload-btn {
@@ -148,7 +148,7 @@ header {
 
 .rules-area li {
     list-style-type: none;
-    color: yellow;
+    color: white;
     font-size: 150%;
     display: inline;
 }
@@ -201,7 +201,7 @@ header {
     }
 
     .rules-area li {
-        font-size: 100%;
+        font-size: 120%;
     }
 
 }
