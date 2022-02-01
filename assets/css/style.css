@@ -29,30 +29,31 @@ header {
     height: 60px;
     font-family: 'Unica One', sans-serif;
     font-size: 150%;
-    background-color: black;
+    color: black;
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .btn:active, .btn:hover {
-    border: 3px solid red;
+    border: 3px solid black;
 }
 
 .btn-easy {
-    color: greenyellow;
+    background-color: greenyellow;
 }
 
 .btn-normal {
-    color: orange;
+    background-color: orange;
 }
 
 .btn-hard {
-    color: red;
+    background-color: red;
 }
 
 .reload-btn {
     background-color: black;
+    color: white;
 }
 
 .subheading {
@@ -202,6 +203,7 @@ header {
 
     .rules-area li {
         font-size: 120%;
+        display: inline-flex;
     }
 
 }
