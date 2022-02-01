@@ -198,14 +198,10 @@ header {
 
     #result {
         font-size: 300%;
-        margin: 10px auto;
     }
 
     .rules-area li {
-        list-style-type: none;
-        color: yellow;
         font-size: 100%;
-        display: inline;
     }
 
 }
