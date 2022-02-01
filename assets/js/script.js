@@ -16,6 +16,8 @@ var moves = 1;
 var maxMoves = document.getElementById("moves-counter").innerText;
 
 // create object for outcomes of weapon selection
+// initial inspiration from (https://dev.to/abhidevelopssuntech/how-to-make-rock-paper-scissors-in-javascript-47ef)
+// and then edited for my own requirements
 var selectedWeapon = {
     'rock' : {
         'rock' : 'draw',
@@ -111,7 +113,7 @@ function checkResult(selected){
 
     // switch to increment score
     // if case is win then player score to increment by one,
-    // if case is lose then computer score to incremnt by one,
+    // if case is lose then computer score to increment by one,
     // otherwise no change
     switch(selectedWeapon[selected][computerSelected]){
         case 'win':

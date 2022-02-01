@@ -127,7 +127,7 @@ The live link can be found here - https://aririx1410.github.io/rock-paper-scisso
 - The initial inspiration and code for this project was taken from [Abhi Develops](https://dev.to/abhidevelopssuntech/how-to-make-rock-paper-scissors-in-javascript-47ef) and then edited and expanded for my own requirements.
 - [Stack Overflow](https://stackoverflow.com) was a great source of information but was particularly used for help hiding divs during different game play stages [here](https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript), when making the reload or play again button [here](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click) and most of all for help setting my moves counter, where I ended up physically asking for help after struggling for a few days with teh same issue [here](https://stackoverflow.com/questions/70772896/how-do-i-change-amount-of-game-moves-for-different-game-difficulties)
 - [W3Schools](https://www.w3schools.com) was very informative throughout especially for understanding objects [here](https://www.w3schools.com/js/js_object_methods.asp) and variables [here](https://www.w3schools.com/js/js_variables.asp)
-- [Code Institute](https://learn.codeinstitute.net/) JavaScript Essentials tutorials were consulted throughout for clarification and understanding.
+- [Code Institute](https://learn.codeinstitute.net/) JavaScript Essentials tutorials were consulted throughout for clarification and understanding. Inspiration for the rules section was taken from the example project shown in Portfolio 2: Project Submission videos.
 - All of the icons used in this project came from [Font Awesome](https://fontawesome.com/)
 
 ### Media
