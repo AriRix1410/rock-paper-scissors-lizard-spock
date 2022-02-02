@@ -2,7 +2,7 @@
 
 Rock Paper Scissors Lizard Spock is a variation of the traditional Rock Paper Scissors game and was first introduced on the TV show The Big Bang Theory. In this game, users will play against the computer. The user will select a "weapon" of choice and this will be compared to a completely randomly generated computer selection and a winner determined.
 
-Users will learn the rules of the game in order to understand which selections win or lose against others. There is no skill level required to play this game as it is a game of chance and is targetted at both adults and children alike.
+Users will learn the rules of the game in order to understand which selections win or lose against each other. There is no skill level required to play this game as it is a game of chance, as such it is only intended to be an entertaining mini game, targetted at both adults and children alike.
 
 ![Responsive Mockup](/assets/images/mock-up.png)
 
@@ -80,7 +80,7 @@ Users will learn the rules of the game in order to understand which selections w
 
 ## Testing 
 
-- The site has been tested on Chrome, Microsoft Edge and Firefox and Opera.
+- The site has been tested on Chrome, Microsoft Edge, Firefox and Opera.
 - I have confirmed that the site is responsive, looks good and is fuctional on all screen sizes down to 320px. This has been done by testing on the dev tools device toolbar on Chrome as well as double checking on my own devices.
 
 ### Validator Testing 
@@ -91,7 +91,7 @@ Users will learn the rules of the game in order to understand which selections w
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Faririx1410.github.io%2Frock-paper-scissors-lizard-spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   - ![(Jigsaw) validator](/assets/images/jigsaw.png)
-  JavaScript
+- JavaScript
   - No significant issues were found when passing through the official [JSHint Javascript validator](https://jshint.com/)
   - After investigation, despite displaying that there are two unused variables, this is not the case. These are both functions that are called upon within the HTML via use of onclick attribute buttons as shown in Code Institute JavaScript Essentials, JavaScript & the DOM.
   - ![(Jigsaw) validator](/assets/images/jshint.png)
